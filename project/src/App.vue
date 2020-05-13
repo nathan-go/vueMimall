@@ -1,10 +1,11 @@
 <template>
     <div id="app">
-        hello world
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     name: 'App',
 };
