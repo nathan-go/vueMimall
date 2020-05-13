@@ -46,7 +46,7 @@
 
 1. 看图就行，完成之前的所有 xmind 图
 
-## vuecli
+## chapter3: vuecli
 
 ### 3.1 vuecli
 
@@ -54,3 +54,6 @@
 
 1. 完成基本的架构，非业务上面的架构
 2. 脚手架工具
+3. vue create projectName
+4. 或者 vue ui， 一样的
+5. 使用 ui 也挺方便的，比较直观，但是我们还是使用命令来处理吧
