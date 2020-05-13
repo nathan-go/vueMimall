@@ -32,4 +32,5 @@
 
 ## 2.4 vscode 操作 git
 
-1.
+1. add, commit, push, 都有了的哦
+2.
