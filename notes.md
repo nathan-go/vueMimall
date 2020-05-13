@@ -101,3 +101,14 @@
 9. router： 路由就不说了吧，因为只有一个文件，所以我们这里添加了 router.js 文件
 10. 在 page 里面，home.vue 是总框架，因为 detail 页面和 index 页面和 product 页面， 都复用了 footer 和 header，所以我们这里注意： home 是主体，里面的内容通过 router-view 来转换到不同的 detail，index 或者 product 里面。
 11. alipay 是阿里的中转页面。
+
+### 4.6 基本插件需求
+
+1. 轮播插件，懒加载插件，还有 elementUI
+2. elementUI 需要按需加载，因为只是使用了一部分
+3. 使用了 scss 的预编译
+4. 一键修改主题，肯定是通过 scss 或者其他的预编译工具来实现的。
+5. cookie 也是需要使用的
+6. npm i vue-lazyload element-ui node-sass sass-loader vue-awesome-swiper vue-axios vue-cookie --save-dev
+
+###
