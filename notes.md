@@ -111,4 +111,13 @@
 5. cookie 也是需要使用的
 6. npm i vue-lazyload element-ui node-sass sass-loader vue-awesome-swiper vue-axios vue-cookie --save-dev
 
-###
+### 4.7 路由的封装
+
+1. 我们在给`/`写路由的时候，给 Home 组件加入一个嵌套视图，注意这里的使用方式。
+2. 我们首页里面，有三个子路由，就是 index， home，和 product，共享了 footer 和 header，所以这样子设置
+3. 其他的同理，有个单独的 cart
+4. order，order 下面有 orderList, orderPay, orderConfirm
+5. 注意这里又一个快速转到文件的东东，我们 command + P， 输入就行
+6. 注意里面 redirect 去了 index 里面
+7. 页面中找到共性或者 api 来找到 router 的响应
+8. 如何看设计稿，重要的
