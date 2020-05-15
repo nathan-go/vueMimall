@@ -17,7 +17,14 @@ Vue.config.productionTip = false;
  * timeout必须这是，不然用户体验非常的差
  */
 
-//axios.defaults.baseURL = '/api';
+// 方式3，先定义了一个开关，mock,只有我们使用mock的时候，mock的api才
+// 被加载，而我们使用的时候，就不加载，所以require使用是合适的
+const mock = true;
+if (mock) {
+    //我们不适用import， 是因为import的是预编译加载，而require是执行的时候再运行
+    require('./mock/api');
+}
+axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 console.log(env.baseURL);
 

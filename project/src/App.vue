@@ -21,6 +21,12 @@ export default {
         // }); 方式1： 本地加载请求静态资源
 
         // 方式2： 调用easy-mock
+
+        // 方式3： 集成mockjs api
+        this.axios.get('/user/login').then((res) => {
+            this.res = res;
+            console.log(JSON.stringify(this.res));
+        });
     },
 };
 </script>
