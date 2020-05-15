@@ -8,8 +8,19 @@
 import storage from './storage/index';
 export default {
     name: 'App',
+    data() {
+        return {
+            res: '',
+        };
+    },
     mounted() {
         storage.setItem('key1', 1111);
+        // this.axios.get('/mock/user.json').then((res) => {
+        //     this.res = res;
+        //     console.log(this.res);
+        // }); 方式1： 本地加载请求静态资源
+
+        // 方式2： 调用easy-mock
     },
 };
 </script>

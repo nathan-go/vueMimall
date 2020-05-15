@@ -17,8 +17,9 @@ Vue.config.productionTip = false;
  * timeout必须这是，不然用户体验非常的差
  */
 
-axios.defaults.baseURL = '/api';
+//axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
+console.log(env.baseURL);
 
 axios.interceptors.response.use(function(response) {
     // 出口拦截
