@@ -121,3 +121,25 @@
 6. 注意里面 redirect 去了 index 里面
 7. 页面中找到共性或者 api 来找到 router 的响应
 8. 如何看设计稿，重要的
+
+### 4.8 storage 的封装
+
+1. cookie，localStorage，sessionStorage 三者的区别？
+2. 为什么需要封装 storage，本身不是已经有 api 可以使用了么？
+
+#### 问题一
+
+1. 区别
+    1. 存储大小，cookie 4k，存储字符串。storage，5m，是存储了对象
+    2. 有效期： cookie 是有有效期的，但是 storage 永久存储，是说的 localStorage，但是针对 sessionStorage 可不是，会话相关的。
+    3. cookie 会发送到服务器端，存储在内存中，storage 只是存储在浏览器端。
+    4. 路径： cookie 有路径的限制，而 storage 只存储在域名下
+    5. api： cookie 没有特定的 api，storage 有对应的 api
+
+#### 问题二
+
+1. 为什么封装 storage？
+    1. storage 本身有 api，但是只是简单的 key/value 的形式
+    2. storage 只存储字符串，需要人工转换成 json 对象
+    3. storage 只能一次性清空，不能单个清空
+2. 本例 app 使用的 sessionStorage，不进行持久的存储。
