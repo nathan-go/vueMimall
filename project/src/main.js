@@ -25,6 +25,7 @@ if (mock) {
     require('./mock/api');
 }
 axios.defaults.baseURL = '/api';
+// axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5dc7afee2b69d9223b633cbb/mimall';
 axios.defaults.timeout = 8000;
 console.log(env.baseURL);
 
