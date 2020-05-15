@@ -3,8 +3,9 @@ import App from './App.vue';
 import router from './router';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-Vue.config.productionTip = false;
+import env from './env';
 
+Vue.config.productionTip = false;
 // 根据前端的跨域方式我们来做调整
 /**
  * 如果我们使用了的是接口代理的话：
@@ -15,6 +16,7 @@ Vue.config.productionTip = false;
  * 目前/api的方式就是接口代理
  * timeout必须这是，不然用户体验非常的差
  */
+
 axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 
